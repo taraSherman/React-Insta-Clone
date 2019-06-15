@@ -1,30 +1,25 @@
-import React, { Component } from 'react';
-import dummyData from './dummy-data';
-import PostContainer from './components/PostContainer/PostContainer';
-import './App.css';
+import React, { Component } from "react";
+
+import dummyData from "./dummy-data";
+import PostContainer from "./components/PostContainer/PostContainer";
 
 class App extends Component {
-  constructor() {
-      super();
-      this.state = {
-        posts: dummyData
-      };
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: dummyData,
+    };
   }
 
   render() {
-      return(
-          <div className="App">
-
-            <div className="post-container-data">
-              {this.state.posts.map(data => (
-                <PostContainer key={data.timestamp} data={data} />
-              ))}
-            </div>
-          </div>
-      )
-  };
-};
+    return (
+      <div className="App">
+        <div>
+          <PostContainer data={this.state.data} />
+        </div> 
+      </div>
+    );
+  }
+}
 
 export default App;
-
-// small change for initial commit
