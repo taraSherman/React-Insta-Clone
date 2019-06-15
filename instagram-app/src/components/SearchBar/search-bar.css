@@ -1,0 +1,39 @@
+.searchbar-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 5px;
+}
+
+.searchbar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar-title {
+    font-family: 'Grand Hotel', cursive;
+}
+
+.searchbar-input{
+    height: 25px;
+    margin-top: 30px;
+}
+
+.searchbar-input::placeholder{
+    text-align: center;
+}
+
+.icon {
+    margin-top: 30px;
+    font-size: 2em;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.fa-instagram {
+    padding-right: 0.7em;
+    border-right: 0.1px solid black;
+}
