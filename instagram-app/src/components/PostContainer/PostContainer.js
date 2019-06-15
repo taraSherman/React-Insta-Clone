@@ -12,6 +12,24 @@ class PostContainer extends React.Component {
         }
     };
 
+    toggleLikes = () => {
+      if (!this.state.updated) {
+        this.setState(prevState => {
+          return {
+            likes: prevState.likes + 1,
+            updated: true
+          };
+        });
+      } else {
+        this.setState(prevState => {
+          return {
+            likes: prevState.likes - 1,
+            updated: false
+          };
+        });
+      }
+    };
+
     render() {
     return (
         <div className="post-container">
@@ -20,7 +38,7 @@ class PostContainer extends React.Component {
                     <img className="user-thumbnail" src={this.props.data.thumbnailUrl} alt=""></img>
                 </div>
                 <div className="post-container-header-user-name-container">
-                    <h2 className="user-name">{this.props.data.username}</h2>
+                    <h2 className="user-name"><strong>{this.props.data.username}</strong></h2>
                 </div>
             </div>
             <div className="post-content">
