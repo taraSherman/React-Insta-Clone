@@ -1,0 +1,57 @@
+.post-container{
+    max-width: 500px;
+    margin: 5px auto;
+}
+
+.post-container-header {
+    display: flex;
+    height: 50px;
+    margin: 5px auto;
+}
+
+.comment-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.post-icon-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.likes-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user-name {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.user-thumbnail {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.post-image {
+    width: 100%;
+}
+
+.icon {
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.number-of-likes {
+    margin-top: 5px;
+    font-weight: bold;
+}
